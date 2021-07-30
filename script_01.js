@@ -66,3 +66,53 @@ else
 {
     console.log("John ist jünger.");
 }
+
+
+/****** Fallunterscheidung / CASE|SWITCH 1 ******/
+
+const firstName = "Jane";
+let job;
+job = "driver";  // .. fährt TAXI!
+job = "diver"; // .. taucht im Rhein!
+job = "artist"; // .. malt ein Bild!
+job = "pilot"; // .. macht etwas anderes!
+
+job = "teacher"; // .. unterrichtet!
+job = "instructor"; // .. unterrichtet!
+
+// switch (job) 
+// {
+//     case "driver": //1. Fall (case)
+//         console.log(firstName + " fährt TAXI!");
+//         break;
+//     case "diver": //2. Fall (case)
+//         console.log(firstName + " taucht im Rhein!");
+//         break;
+//     case "artist": //3. Fall (case)
+//         console.log(firstName + " malt ein Bild!");
+//         break;
+//     case "teacher": //4. Fall (case)
+//     case "instructor": //4a. Fall (case)
+//         console.log(firstName + " unterrichtet!");
+//         break;
+//     default: // für alle nicht bezeichneten Fälle ... WICHTIG !!!!
+//         console.log(firstName + " macht etwas anderes!");
+//         break;
+// }
+
+/********  Fallunterscheidung / CASE|SWITCH 2 *******/
+
+const a = 100;
+
+switch (true) {
+    case (a == 1):
+        console.log("a ist 1");
+        break;    
+    case (a == 2):
+        console.log("a ist 2");
+        break;
+    default:
+        console.log("a hat einen anderen Wert");
+        break;
+}
+© 2021 GitHub, Inc.
